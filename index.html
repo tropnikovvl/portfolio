@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Vladislav Tropnikov</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3></h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="https://example.com">Resume</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#certifications">Certifications</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contacts</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Vladislav Tropnikov</span></h1>
+        <h2 class="about__role">Senior DevOps engineer</h2>
+        <p class="about__desc">text text text</p>
+      </div>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Tech stack</h2>
+        <ul class="skills__list">
+          <!-- Clouds -->
+          <li class="skills__list-item btn btn--plain--cloud">
+            Microsoft Azure
+          </li>
+          <li class="skills__list-item btn btn--plain--cloud">AWS</li>
+          <li class="skills__list-item btn btn--plain--cloud">Google Cloud</li>
+          <li class="skills__list-item btn btn--plain--cloud">Oracle Cloud</li>
+          <!-- IaC -->
+          <li class="skills__list-item btn btn--plain--iac">Terraform</li>
+          <li class="skills__list-item btn btn--plain--iac">Terragrunt</li>
+          <li class="skills__list-item btn btn--plain--iac">Ansible</li>
+          <li class="skills__list-item btn btn--plain--iac">Packer</li>
+          <!-- Deployment -->
+          <li class="skills__list-item btn btn--plain--deploy">Kubernetes</li>
+          <li class="skills__list-item btn btn--plain--deploy">Docker</li>
+          <!-- CI/CD -->
+          <li class="skills__list-item btn btn--plain--cicd">Github Actions</li>
+          <li class="skills__list-item btn btn--plain--cicd">Azure DevOps</li>
+          <li class="skills__list-item btn btn--plain--cicd">Gitlab CI</li>
+          <!-- Monitoring -->
+          <li class="skills__list-item btn btn--plain--mon">Prometheus</li>
+          <li class="skills__list-item btn btn--plain--mon">Victoriametrics</li>
+          <li class="skills__list-item btn btn--plain--mon">ELK</li>
+          <li class="skills__list-item btn btn--plain--mon">Thanos</li>
+          <!-- Scripting languages -->
+          <li class="skills__list-item btn btn--plain--lang">Python</li>
+          <li class="skills__list-item btn btn--plain--lang">Bash</li>
+          <!-- DataBases -->
+          <li class="skills__list-item btn btn--plain--db">PostgreSQL</li>
+          <li class="skills__list-item btn btn--plain--db">MySQL</li>
+          <!-- other -->
+          <li class="skills__list-item btn btn--plain--oth">Git</li>
+        </ul>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Cloud platform</h3>
+            <p class="project__description">
+              Diam volutpat commodo sed egestas egestas fringilla phasellus
+              faucibus. Dictumst quisque sagittis purus sit amet volutpat
+              consequat mauris.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Microsoft Azure</li>
+              <li class="project__stack-item">Terraform</li>
+              <li class="project__stack-item">Github Actions</li>
+            </ul>
+
+            <!-- <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>On-premise platform</h3>
+            <p class="project__description">
+              Diam volutpat commodo sed egestas egestas fringilla phasellus
+              faucibus. Dictumst quisque sagittis purus sit amet volutpat
+              consequat mauris.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Kubernetes</li>
+              <li class="project__stack-item">Ansible</li>
+              <li class="project__stack-item">Gitlab CI</li>
+            </ul>
+
+            <!-- <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>CI/CD</h3>
+            <p class="project__description">
+              Diam volutpat commodo sed egestas egestas fringilla phasellus
+              faucibus. Dictumst quisque sagittis purus sit amet volutpat
+              consequat mauris.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Docker</li>
+              <li class="project__stack-item">Ansible</li>
+              <li class="project__stack-item">Gitlab CI</li>
+            </ul>
+
+            <!-- <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Cecrtifications -->
+      <section class="section certs" id="certifications">
+        <h2 class="section__title">Certifications</h2>
+        <ul class="certs__list">
+          <table width="100%" height="100%">
+            <tr>
+              <td style="text-align: center; vertical-align: middle">
+                <img
+                  src="https://images.credly.com/size/680x680/images/c3ab66f8-5d59-4afa-a6c2-0ba30a1989ca/CERT-Expert-DevOps-Engineer-600x600.png"
+                  style="height: auto; width: 13.5%"
+                  class="img--hover"
+                />
+                <img
+                  src="https://images.credly.com/size/680x680/images/61542181-0e8d-496c-a17c-3d4bf590eda1/azure-data-engineer-associate-600x600.png"
+                  style="height: auto; width: 13.5%"
+                  class="img--hover"
+                />
+                <img
+                  src="https://images.credly.com/size/680x680/images/336eebfc-0ac3-4553-9a67-b402f491f185/azure-administrator-associate-600x600.png"
+                  style="height: auto; width: 13.5%"
+                  class="img--hover"
+                />
+                <img
+                  src="https://images.credly.com/size/680x680/images/63316b60-f62d-4e51-aacc-c23cb850089c/azure-developer-associate-600x600.png"
+                  style="height: auto; width: 13.5%"
+                  class="img--hover"
+                />
+                <img
+                  src="https://images.credly.com/size/680x680/images/70eb1e3f-d4de-4377-a062-b20fb29594ea/azure-data-fundamentals-600x600.png"
+                  style="height: auto; width: 13.5%"
+                  class="img--hover"
+                />
+                <img
+                  src="https://images.credly.com/size/680x680/images/f88d800c-5261-45c6-9515-0458e31c3e16/ckad_from_cncfsite.png"
+                  style="height: auto; width: 13.5%"
+                  class="img--hover"
+                />
+                <img
+                  src="https://images.credly.com/size/680x680/images/68468004-5a85-4f3b-bc58-590773979486/AWS-CloudPractitioner-2020.png"
+                  style="height: auto; width: 13.5%"
+                  class="img--hover"
+                />
+              </td>
+            </tr>
+          </table>
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contacts</h2>
+        <div class="about__contact">
+          <a
+            href="https://linkedin.com/in/tropnikovvl"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.credly.com/users/tropnikovvl/badges"
+            aria-label="credly"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fas fa-award"></i>
+          </a>
+          <a
+            href="https://github.com/tropnikovvl"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+          <a
+            href="mailto:vtr.name@gmail.com"
+            aria-label="gmail"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fas fa-envelope"></i>
+          </a>
+          <!-- <a href="https://example.com">
+          <span class="btn btn--outline">Resume</span>
+        </a> -->
+        </div>
+      </section>
+    </main>
+
+    <div class="scroll-container">
+      <div class="scroll-top">
+        <a aria-label="Scroll up" href="#top">
+          <i aria-hidden="true" class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
