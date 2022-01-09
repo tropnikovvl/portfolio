@@ -12,13 +12,13 @@ jobs:
     name: pre_commit_linters
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v2
+      - name: Checkout Code
+        uses: actions/checkout@v2
 
-    - name: Install pre-commit
-      run: |
-        pip install pre-commit
+      - name: Install pre-commit
+        run: |
+          pip install pre-commit
 
-    - name: Run common linters
-      run: |
-        pre-commit run -a || { git status; echo "Validation failed"; exit 1; }
+      - name: Run common linters
+        run: |
+          pre-commit run -a || { git status; echo "Validation failed"; exit 1; }
