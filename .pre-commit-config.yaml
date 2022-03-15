@@ -9,8 +9,12 @@ repos:
     rev: v4.0.1
     hooks:
       - id: trailing-whitespace
+        exclude: pdf/
       - id: check-merge-conflict
+        exclude: pdf/
       - id: end-of-file-fixer
+        exclude: pdf/
       - id: mixed-line-ending
+        exclude: pdf/
         args:
           - --fix=lf
