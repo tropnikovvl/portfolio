@@ -63,13 +63,13 @@
       <!-- About -->
       <div class="about center">
         <h1>Hi, I am <span class="about__name">Vladislav Tropnikov</span></h1>
-        <h2 class="about__role">Senior DevOps engineer</h2>
+        <h2 class="about__role">Lead DevOps engineer</h2>
         <p class="about__desc">
-          My Immediate career goal is to work with reputable organization,
-          having congenial working environment and where challenging
-          opportunities are available to contribute towards the development of
-          organization. Also I strive to ensure that a high degree of
-          relationship is maintained between staff and colleagues.
+          IT engineer with over 8 years’ experience. I'm interested in following areas: <br>
+          - Big Data (design and building systems, data processing, technologies and tools) <br>
+          - Software development (languages, frameworks, integration) <br>
+          - DevOps (automation, CI/CD, monitoring, logging facility) <br>
+          - Cloud (Azure, AWS, GCP, DO, Oracle) <br>
         </p>
       </div>
 
@@ -86,9 +86,9 @@
           <li class="skills__list-item btn btn--plain--cloud">Oracle Cloud</li>
           <!-- IaC -->
           <li class="skills__list-item btn btn--plain--iac">Terraform</li>
-          <li class="skills__list-item btn btn--plain--iac">Terragrunt</li>
           <li class="skills__list-item btn btn--plain--iac">Ansible</li>
           <li class="skills__list-item btn btn--plain--iac">Packer</li>
+          <li class="skills__list-item btn btn--plain--iac">Helm</li>
           <!-- Deployment -->
           <li class="skills__list-item btn btn--plain--deploy">Linux</li>
           <li class="skills__list-item btn btn--plain--deploy">Kubernetes</li>
@@ -97,8 +97,10 @@
           <li class="skills__list-item btn btn--plain--cicd">Github Actions</li>
           <li class="skills__list-item btn btn--plain--cicd">Azure DevOps</li>
           <li class="skills__list-item btn btn--plain--cicd">Gitlab CI</li>
+          <li class="skills__list-item btn btn--plain--cicd">TeamCity</li>
           <!-- Monitoring -->
           <li class="skills__list-item btn btn--plain--mon">Prometheus</li>
+          <li class="skills__list-item btn btn--plain--mon">Grafata stack (LTGM)</li>
           <li class="skills__list-item btn btn--plain--mon">Victoriametrics</li>
           <li class="skills__list-item btn btn--plain--mon">ELK</li>
           <li class="skills__list-item btn btn--plain--mon">Thanos</li>
@@ -108,6 +110,7 @@
           <!-- DataBases -->
           <li class="skills__list-item btn btn--plain--db">PostgreSQL</li>
           <li class="skills__list-item btn btn--plain--db">MySQL</li>
+          <li class="skills__list-item btn btn--plain--db">Cloud DB</li>
           <!-- other -->
           <li class="skills__list-item btn btn--plain--oth">Git</li>
         </ul>
@@ -119,7 +122,37 @@
 
         <div class="projects__grid">
           <div class="project">
-            <h3>Cloud platform</h3>
+            <h3>AWS platform</h3>
+            <p class="project__description">
+              The technical leader in creating an Azure-based data collection
+              and analysis platform
+            </p>
+            <p>&nbsp;</p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Amazon Web Services</li>
+              <li class="project__stack-item">Kubernetes (EKS)</li>
+              <li class="project__stack-item">Terraform</li>
+              <li class="project__stack-item">TeamCity</li>
+            </ul>
+
+            <!-- <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a> -->
+          </div>
+
+          <div class="project">
+            <h3>Azure platform</h3>
             <p class="project__description">
               The technical leader in creating an Azure-based data collection
               and analysis platform
@@ -127,6 +160,7 @@
             <p>&nbsp;</p>
             <ul class="project__stack">
               <li class="project__stack-item">Microsoft Azure</li>
+              <li class="project__stack-item">Kubernetes (AKS)</li>
               <li class="project__stack-item">Terraform</li>
               <li class="project__stack-item">Github Actions</li>
             </ul>
@@ -157,35 +191,7 @@
               <li class="project__stack-item">Kubernetes</li>
               <li class="project__stack-item">Ansible</li>
               <li class="project__stack-item">Gitlab CI</li>
-            </ul>
-
-            <!-- <a
-              href="https://github.com"
-              aria-label="source code"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fab fa-github"></i>
-            </a>
-            <a
-              href="https://example.com"
-              aria-label="live preview"
-              class="link link--icon"
-            >
-              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
-            </a> -->
-          </div>
-
-          <div class="project">
-            <h3>CI/CD</h3>
-            <p class="project__description">
-              Key developer in creating and migrating pipelines to a new CI/CD
-              solution
-            </p>
-            <p>&nbsp;</p>
-            <ul class="project__stack">
-              <li class="project__stack-item">Docker</li>
-              <li class="project__stack-item">Ansible</li>
-              <li class="project__stack-item">Gitlab CI</li>
+              <li class="project__stack-item">Prometheus</li>
             </ul>
 
             <!-- <a
