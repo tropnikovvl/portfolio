@@ -355,9 +355,14 @@ main {
 }
 
 .about__desc,
+.about__desc_contacts,
 .about__desc_list {
   font-size: 1rem;
   max-width: 700px;
+}
+
+.about__desc_contacts {
+  text-align: center;
 }
 
 .about__desc_list {
@@ -365,6 +370,7 @@ main {
 }
 
 .about__desc,
+.about__desc_contacts,
 .about__desc_list,
 .about__contact {
   margin-top: 1em;
